@@ -1,8 +1,7 @@
 // business logic
 var leapYear = function(year) {
-  debugger;
   var year = parseInt(year);
-  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0) && (typeof(year) === "number") && (year > 0)) {
+  if ((year % 4 === 0) && ((year % 100 !== 0) || (year % 400 === 0)) && (typeof(year) === "number") && (year > 0)) {
     return true;
   } else {
     return false;
